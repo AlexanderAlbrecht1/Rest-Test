@@ -1,1 +1,8 @@
-<p>pokemon works!</p>
+<h1>Lass die Infos zum Pokemon anzeigen</h1>
+
+<label for="fname">Nummer des Pokemons:</label><br>
+  <input type="number" min="0" [(ngModel)]="pokeNumber"><br><br>
+
+<button mat-flat-button color="accent" (click)="loadPokemon()">Pokedaten laden</button><br><br>
+
+<button mat-flat-button color="accent" routerLink="">Übersicht</button>
