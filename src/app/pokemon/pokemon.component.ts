@@ -1,13 +1,14 @@
+import { NgIf } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import {MatCardModule} from '@angular/material/card';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-pokemon',
   standalone: true,
-  imports: [RouterLink, FormsModule, HttpClientModule],
+  imports: [RouterLink, FormsModule, HttpClientModule,MatCardModule, NgIf],
   templateUrl: './pokemon.component.html',
   styleUrl: './pokemon.component.scss',
 })

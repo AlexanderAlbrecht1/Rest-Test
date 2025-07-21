@@ -5,4 +5,12 @@
 
 <button mat-flat-button color="accent" (click)="showPokemon()">Pokedaten laden</button><br><br>
 
+<mat-card *ngIf="Pokemon" class="singleCard">
+    <mat-card-content>
+      <h1>{{ Pokemon.name }}</h1>
+      <img src='{{Pokemon.sprites.front_default}}' alt="">
+      <p>Height:</p> <p>{{ Pokemon.height }}</p>
+    </mat-card-content>
+  </mat-card>
+
 <button mat-flat-button color="accent" routerLink="">Übersicht</button>
