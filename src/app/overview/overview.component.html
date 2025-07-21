@@ -1,5 +1,5 @@
 <section>
-  <mat-card *ngFor="let api of apiList" class="singleCard" [routerLink]="['{{api.api}}']" >
+  <mat-card *ngFor="let api of apiList" class="singleCard" [routerLink]="api.route" >
     <mat-card-content>
       <h1>{{ api.title }}</h1>
     </mat-card-content>
