@@ -22,6 +22,11 @@ export class OverviewComponent {
       "title" : "What the quack?",
       "url" : "https://random-d.uk/api/v2/quack",
       "route" : "quack"
+    },
+        {
+      "title" : "Crypto",
+      "url" : "https://api.coingecko.com",
+      "route" : "crypto"
     }
 
 ]
